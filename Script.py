@@ -195,8 +195,8 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 ★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
 
 𝗜𝗗 <b>: {}</b>
-ggg
- <b>: {}</b>
+<a href="https://t.me/Mix_Cinema_Box"><b>{file_name}</b></a>
+Name <b>: {}</b>
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
