@@ -200,7 +200,7 @@ Name <b>: {}</b>
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<a href="https://t.me/Latest_movies_freeOnNet"><b>{file_name}</b></a>
+    CAPTION = """<a href="https://t.me/Latest_movies_freeOnNet"><b>{file_name}</b></a>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
