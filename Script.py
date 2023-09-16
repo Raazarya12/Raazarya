@@ -195,15 +195,12 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 ★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
 
 𝗜𝗗 <b>: {}</b>
-<a href="https://t.me/Mix_Cinema_Box"><b>{file_name}</b></a>
+
 Name <b>: {}</b>
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """
- {file_name}
-
-⚙️ sɪᴢᴇ : {file_size}"""
+    CAPTION = """<a href="https://t.me/Latest_movies_freeOnNet"><b>{file_name}</b></a>
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
