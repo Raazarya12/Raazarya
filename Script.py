@@ -11,7 +11,7 @@ class script(object):
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>
- 🤖 ᴍʏ ɴᴀᴍᴇ : {Titanoboa_team}
+ 🤖 ᴍʏ ɴᴀᴍᴇ : {}
  👨‍💻 ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/Titanoboa_team'>ɴᴏᴛʜɪɴɢ ʙʀᴏ</a>
  📚 ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
  📝 ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a>
