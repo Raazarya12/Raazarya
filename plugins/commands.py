@@ -25,14 +25,14 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton(' ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url="https://t.me/Ex_Mr_R"),
-                    InlineKeyboardButton(' ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('👻 ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url="https://t.me/Latest_movies_freeOnNet"),
+                    InlineKeyboardButton('🫨 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton(' ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ', url=CHNL_LNK)
+                    InlineKeyboardButton('🔻 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔻', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
-        await asyncio.sleep(2) #  https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17  wait a bit, before checking.
+        await asyncio.sleep(2) # 😢 https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
@@ -45,13 +45,13 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ', url=CHNL_LNK),
-                    InlineKeyboardButton(' ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('🍂ᴜᴘᴅᴀᴛᴇ 🍂', url=CHNL_LNK),
+                    InlineKeyboardButton('🫨 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('👻 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('👾 ᴀʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton(' ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ ', callback_data="shortlink_info")
+                    InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data="shortlink_info")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -83,9 +83,9 @@ async def start(client, message):
             except (IndexError, ValueError):
                 btn.append([InlineKeyboardButton("↺ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_photo(
-            photo = "https://telegra.ph/Mix-cinema-Box-01-31",
+            photo = "https://graph.org/file/2f7b5a8b0d33102d19c8d.jpg",
             chat_id=message.from_user.id,
-            # text="**You are not in our channel given below so you don't get the movie file...\n\nIf you want the movie file, click on the 'ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ' button below and join our back-up channel, then click on the ' Try Again' button below...\n\nThen you will get the movie files...**",
+            # text="**You are not in our channel given below so you don't get the movie file...\n\nIf you want the movie file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the movie files...**",
             caption=script.FORCE_SUB,
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
@@ -95,13 +95,13 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton(' ᴜᴘᴅᴀᴛᴇ', url=CHNL_LNK),
-                    InlineKeyboardButton(' ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('🍂 ᴜᴘᴅᴀᴛᴇ🍂', url=CHNL_LNK),
+                    InlineKeyboardButton('🫨 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton(' ʜᴇʟᴘ', callback_data='about')
+                    InlineKeyboardButton('👻 ʜᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('👾 ʜᴇʟᴘ', callback_data='about')
                 ],[
-                    InlineKeyboardButton(' ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ ', callback_data="shortlink_info")
+                    InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data="shortlink_info")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
@@ -256,12 +256,12 @@ async def start(client, message):
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}", True)
         else:
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}", False)
-        k = await client.send_message(chat_id=message.from_user.id,text=f"<b>Get All Files in a Single Click!!!\n\n ʟɪɴᴋ ➠ : {g}\n\n<i>Note: This message is deleted in 5 mins to avoid copyrights. Save the link to Somewhere else</i></b>", reply_markup=InlineKeyboardMarkup(
+        k = await client.send_message(chat_id=message.from_user.id,text=f"<b>Get All Files in a Single Click!!!\n\n📂 ʟɪɴᴋ ➠ : {g}\n\n<i>Note: This message is deleted in 5 mins to avoid copyrights. Save the link to Somewhere else</i></b>", reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(' ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ', url=g)
+                        InlineKeyboardButton('📁 ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📁', url=g)
                     ], [
-                        InlineKeyboardButton(' Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ', url=await get_tutorial(chat_id))
+                        InlineKeyboardButton('🤔 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ 🤔', url=await get_tutorial(chat_id))
                     ]
                 ]
             )
@@ -277,12 +277,12 @@ async def start(client, message):
         files_ = await get_file_details(file_id)
         files = files_[0]
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
-        k = await client.send_message(chat_id=user,text=f"<b>Nᴀᴍᴇ ➠ : <code>{files.file_name}</code> \n\nSɪᴢᴇ ➠ : {get_size(files.file_size)}\n\nFɪʟᴇ ʟɪɴᴋ ➠ : {g}\n\n<i>Note: ⚠️ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ  ᴍɪɴᴜᴛᴇs.</i></b>", reply_markup=InlineKeyboardMarkup(
+        k = await client.send_message(chat_id=user,text=f"<b>📕Nᴀᴍᴇ ➠ : <code>{files.file_name}</code> \n\n🔗Sɪᴢᴇ ➠ : {get_size(files.file_size)}\n\n📂Fɪʟᴇ ʟɪɴᴋ ➠ : {g}\n\n<i>Note: ⚠️ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ 𝟷𝟶 ᴍɪɴᴜᴛᴇs.</i></b>", reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(' ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ', url=g)
+                        InlineKeyboardButton('📂 ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📂', url=g)
                     ], [
-                        InlineKeyboardButton(' Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ', url=await get_tutorial(chat_id))
+                        InlineKeyboardButton('🤔 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ 🤔', url=await get_tutorial(chat_id))
                     ]
                 ]
             )
@@ -331,7 +331,7 @@ async def start(client, message):
                     InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton(' Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ ', callback_data=f'gen_stream_link:{file_id}'),
+                                InlineKeyboardButton('🌈 Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🌈', callback_data=f'gen_stream_link:{file_id}'),
                             ],[
                                 InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/Latest_movies_freeOnNet")
                             ]
@@ -362,12 +362,12 @@ async def start(client, message):
             files_ = await get_file_details(file_id)
             files = files_[0]
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
-            k = await client.send_message(chat_id=message.from_user.id,text=f"<b>Nᴀᴍᴇ ➠ : <code>{files.file_name}</code> \n\nSɪᴢᴇ ➠ : {get_size(files.file_size)}\n\nFɪʟᴇ ʟɪɴᴋ ➠ : {g}\n\n<i>Note: ⚠️ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ  ᴍɪɴᴜᴛᴇs.</i></b>", reply_markup=InlineKeyboardMarkup(
+            k = await client.send_message(chat_id=message.from_user.id,text=f"<b>📕Nᴀᴍᴇ ➠ : <code>{files.file_name}</code> \n\n🔗Sɪᴢᴇ ➠ : {get_size(files.file_size)}\n\n📂Fɪʟᴇ ʟɪɴᴋ ➠ : {g}\n\n<i>Note: ⚠️ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇᴅ ᴀғᴛᴇʀ 𝟷𝟶 ᴍɪɴᴜᴛᴇs.</i></b>", reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(' ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ ', url=g)
+                            InlineKeyboardButton('📂 ᴍᴏᴠɪᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📂', url=g)
                         ], [
-                            InlineKeyboardButton(' Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ', url=await get_tutorial(chat_id))
+                            InlineKeyboardButton('🤔 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ 🤔', url=await get_tutorial(chat_id))
                         ]
                     ]
                 )
@@ -399,7 +399,7 @@ async def start(client, message):
                     InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton(' Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ ', callback_data=f'gen_stream_link:{file_id}'),
+                                InlineKeyboardButton('🌈 Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🌈', callback_data=f'gen_stream_link:{file_id}'),
                             ],[
                                 InlineKeyboardButton("✨ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ✨", url="https://t.me/Latest_movies_freeOnNet")
                             ]
@@ -429,7 +429,7 @@ async def start(client, message):
             btn = [[
                 InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
             ]]
-            await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file </b>",reply_markup=InlineKeyboardMarkup(btn))
+            await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
             return
         except:
             pass
@@ -466,7 +466,7 @@ async def start(client, message):
                     InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton(' Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ ', callback_data=f'gen_stream_link:{file_id}')
+                                InlineKeyboardButton('🌈 Wᴀᴛᴄʜ Oɴʟɪɴᴇ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🌈', callback_data=f'gen_stream_link:{file_id}')
                             ]
                         ]
                     )
@@ -475,7 +475,7 @@ async def start(client, message):
     btn = [[
         InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
     ]]
-    await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file </b>",reply_markup=InlineKeyboardMarkup(btn))
+    await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
     return   
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
@@ -489,7 +489,7 @@ async def channel_info(bot, message):
     else:
         raise ValueError("Unexpected type of CHANNELS")
 
-    text = ' **Indexed channels/groups**\n'
+    text = '📑 **Indexed channels/groups**\n'
     for channel in channels:
         chat = await bot.get_chat(channel)
         if chat.username:
@@ -831,7 +831,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('View Request', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('Show Options', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b> : {mention} ({reporter})\n\n : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -839,7 +839,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('View Request', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('Show Options', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b> : {mention} ({reporter})\n\n : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -866,7 +866,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('View Request', url=f"{message.link}"),
                         InlineKeyboardButton('Show Options', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b> : {mention} ({reporter})\n\n : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -874,7 +874,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('View Request', url=f"{message.link}"),
                         InlineKeyboardButton('Show Options', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b> : {mention} ({reporter})\n\n : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -963,7 +963,7 @@ async def shortlink(bot, message):
         return await message.reply(f"You are anonymous admin. Turn off anonymous admin and try again this command")
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
-        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\n<u>Follow These Steps to Connect Shortener:</u>\n\n1. Add Me in Your Group with Full Admin Rights\n\n2. After Adding in Grp, Set your Shortener\n\nSend this command in your group\n\n—> /shortlink ""{your_shortener_website_name} {your_shortener_api}\n\n#Sample:-\n/shortlink omnifly.in.net 1f1da5c9df9a58058672ac8d8134e203b03426a1\n\nThat's it!!! Enjoy Earning Money \n\n[[[ Trusted Earning Site - https://bit.ly/mplaylink ]]]\n\nIf you have any Doubts, Feel Free to Ask me - @TeamHMT_Bot\n\n(Puriyala na intha bot la message pannunga - @TeamHMT_bot)</b>")
+        return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !\n\n<u>Follow These Steps to Connect Shortener:</u>\n\n1. Add Me in Your Group with Full Admin Rights\n\n2. After Adding in Grp, Set your Shortener\n\nSend this command in your group\n\n—> /shortlink ""{your_shortener_website_name} {your_shortener_api}\n\n#Sample:-\n/shortlink omnifly.in.net 1f1da5c9df9a58058672ac8d8134e203b03426a1\n\nThat's it!!! Enjoy Earning Money 💲\n\n[[[ Trusted Earning Site - https://bit.ly/mplaylink ]]]\n\nIf you have any Doubts, Feel Free to Ask me - @TeamHMT_Bot\n\n(Puriyala na intha bot la message pannunga - @TeamHMT_bot)</b>")
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         grpid = message.chat.id
         title = message.chat.title
@@ -1093,7 +1093,7 @@ async def settutorial(bot, message):
         
 @Client.on_message(filters.command("restart") & filters.user(ADMINS))
 async def stop_button(bot, message):
-    msg = await bot.send_message(text="**  .   ...**", chat_id=message.chat.id)       
+    msg = await bot.send_message(text="**🔄 𝙿𝚁𝙾𝙲𝙴𝚂𝚂𝙴𝚂 𝚂𝚃𝙾𝙿𝙴𝙳. 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶...**", chat_id=message.chat.id)       
     await asyncio.sleep(3)
-    await msg.edit("**✅️   .     **")
+    await msg.edit("**✅️ 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙴𝙳. 𝙽𝙾𝚆 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙼𝙴**")
     os.execl(sys.executable, sys.executable, *sys.argv)
