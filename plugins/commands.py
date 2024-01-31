@@ -292,7 +292,7 @@ async def start(client, message):
             )
         )
         await asyncio.sleep(600)
-        await .edit("<b>Your message is successfully deleted!!!</b>")
+        await k.edit("<b>Your message is successfully deleted!!!</b>")
         return
         
     elif data.startswith("all"):
@@ -342,7 +342,7 @@ async def start(client, message):
                 )
             )
             filesarr.append(msg)
-        await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
+        await .edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
         return    
         
     elif data.startswith("files"):
