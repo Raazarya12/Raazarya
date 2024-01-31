@@ -250,7 +250,7 @@ async def start(client, message):
                 protect_content=True
             )
     if data.startswith("sendfiles"):
-        chat_id = int("1985196029" + file_id.split("-")[1])
+        chat_id = int("-1001985196029" + file_id.split("-1001985196029")[1])
         userid = message.from_user.id if message.from_user else None
         st = await client.get_chat_member(chat_id, userid)
         if (
